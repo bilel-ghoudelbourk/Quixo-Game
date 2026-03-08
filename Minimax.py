@@ -36,7 +36,7 @@ def evaluate_board(jeu, current_symbol):
 
 def get_best_move(jeu, depth, alpha, beta, is_maximizing, ai_symbol):
     if type(jeu.game_state) is VictoryState:
-        if jeu.game_state.winner == ai_symbol:
+        if jeu.game_state.winner.symbol() == ai_symbol:
             return None, 1000000
         else:
             return None, -1000000

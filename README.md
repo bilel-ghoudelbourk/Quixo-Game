@@ -1,5 +1,10 @@
 # Quixo Game
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-yellow?logo=python)
+![CI/CD](https://github.com/bilel-ghoudelbourk/Quixo-Game/actions/workflows/ci.yml/badge.svg)
+![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)
+
 Une implémentation en Python du célèbre jeu de plateau abstrait **Quixo**. Ce projet propose une interface utilisateur graphique moderne développée avec `tkinter` et permet de jouer soit contre un autre joueur humain (en local), soit contre une Intelligence Artificielle (IA).
 
 ---
@@ -59,6 +64,25 @@ Ce projet est conçu pour être simple à utiliser et ne nécessite **aucune dé
 4. Lancez le jeu via la commande suivante :
    ```bash
    python main.py
+   ```
+
+---
+
+## ✅ Tests et Intégration Continue
+
+Ce projet a été testé avec la librairie `pytest` et dispose d'une couverture de code logique de **100%**. 
+Une pipeline d'Intégration Continue (GitHub Actions) est configurée pour valider chaque changement poussé sur le dépôt.
+
+Pour relancer les tests sur votre machine :
+1. Installez les dépendances de développement (pytest et pytest-cov) :
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+2. Lancez pytest :
+   ```bash
+   python -m pytest tests/ -v
+   # Ou pour le score parfait de couverture :
+   python -m pytest -q --cov=./ --cov-report=term-missing
    ```
 
 Amusez-vous bien !

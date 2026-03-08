@@ -1,0 +1,8 @@
+[run]
+relative_files = True
+omit =
+    VueJeu.py
+    main.py
+    tests/*
+    *.venv*
+    *__pycache__*

@@ -18,3 +18,9 @@ venv.bak/
 
 # Ignore test artifact
 test_ai.py
+
+# Pytest and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
