@@ -1,0 +1,2 @@
+# Ce projet utilise uniquement les bibliothèques standards de Python (tkinter, math, copy).
+# Aucune dépendance externe n'est requise.
